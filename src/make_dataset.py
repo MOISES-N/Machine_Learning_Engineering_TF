@@ -72,7 +72,7 @@ def main():
     # Matriz de Scoring
     df1 = read_file_csv('Dataset_test.csv')
     tdf1 = data_preparation(df1)
-    data_exporting(tdf1, [ 'Delta Temperature[K]','Rotational speed [rpm]','Torque [Nm]','Tool wear [min]' , 'label' ],'Dataset_test_processed.csv')
+    data_exporting(tdf1, [ 'Delta Temperature[K]','Rotational speed [rpm]','Torque [Nm]','Tool wear [min]' ],'Dataset_test_processed.csv')
 
 if __name__ == '__main__' :
 
