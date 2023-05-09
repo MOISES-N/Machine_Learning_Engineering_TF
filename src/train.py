@@ -74,7 +74,7 @@ def Entrenamiento( X_train, y_train , Pipeline_transformacion ):
 
     Trainning_df = Pipeline_transformacion.transform( X_train )
 
-    logreg = LogisticRegression(solver='liblinear', random_state=0)
+    logreg = LogisticRegression(solver='liblinear', class_weight = 'balanced' , random_state=0)
 
     logreg.fit( Trainning_df , y_train )
 
